@@ -1,0 +1,12 @@
+#Ignore all bin folders
+bin/
+target/
+deploy/
+#Ignore all .settings folders
+*/.settings/
+#Ignore vi temporary files
+*~
+*.orig
+*.patch
+class/
+*.class

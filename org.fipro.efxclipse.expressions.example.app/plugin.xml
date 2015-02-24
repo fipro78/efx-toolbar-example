@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+<extension id="product" point="org.eclipse.core.runtime.products">
+	<product name="Core Expressions Example" application="org.eclipse.fx.ui.workbench.fx.application" >
+		<property name="appName" value="Core Expressions Example" />
+		
+		<property name="applicationXMI" value="org.fipro.efxclipse.expressions.example.app/Application.e4xmi" />
+		
+		<property name="cssTheme" value="theme.default" />
+  <property
+        name="lifeCycleURI"
+        value="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.LifecycleHook">
+  </property>
+		
+	</product>
+	
+</extension>
+<extension
+      point="org.eclipse.core.expressions.definitions">
+   <definition
+         id="debugenabled">
+      <with
+            variable="debugEnabled">
+         <equals
+               value="ENABLED">
+         </equals>
+      </with>
+   </definition>
+</extension>
+</plugin>

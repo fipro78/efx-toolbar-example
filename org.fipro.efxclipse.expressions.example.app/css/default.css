@@ -1,0 +1,5 @@
+/* JavaFX CSS - Main CSS-File */
+.view-toolbar {
+	-fx-alignment: baseline-right;
+}
+

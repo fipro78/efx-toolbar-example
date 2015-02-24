@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_JLOb4bs8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.application" bindingContexts="_JLOb4Ls8EeSrrP9hKx24yQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_M2U0oLs8EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.trimmedwindow.toolbarExample" label="Menu/Toolbar Example" width="500" height="400">
+    <children xsi:type="basic:PartStack" xmi:id="_Vmi3oLs9EeSrrP9hKx24yQ" elementId="toolbar.partstack.0">
+      <children xsi:type="basic:Part" xmi:id="_Vmi3obs9EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.part.0" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimplePart" label="Part with Toolbar">
+        <tags>Part-Toolbar-FullSpan</tags>
+        <toolbar xmi:id="_Vmi3ors9EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.toolbar.0">
+          <children xsi:type="menu:DirectToolItem" xmi:id="_Vmi3o7s9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.0" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/sample.gif" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.ToggleToolbarItem"/>
+          <children xsi:type="menu:DirectToolItem" xmi:id="_Vmi3pLs9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.save" visible="false" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/save_edit.gif" tooltip="Save" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler"/>
+          <children xsi:type="menu:DirectToolItem" xmi:id="_Vmi3pbs9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.1" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/ldebug_obj.gif" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler">
+            <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_Vmi3prs9EeSrrP9hKx24yQ" coreExpressionId="debugenabled"/>
+          </children>
+        </toolbar>
+      </children>
+    </children>
+    <mainMenu xmi:id="_rO25ULs8EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_tPQDwbs8EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.menu.1" label="Item Test Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_tPQDwrs8EeSrrP9hKx24yQ" elementId="toolbar.handledmenuitem.0" label="Toggle Menu Item" command="_hVx7YLs8EeSrrP9hKx24yQ"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_tPQDw7s8EeSrrP9hKx24yQ" elementId="toolbar.directmenuitem.1" label="Debug" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler">
+          <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_tPQDxLs8EeSrrP9hKx24yQ" coreExpressionId="debugenabled"/>
+        </children>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Q1iigLwIEeSmd98FzMsfGw" elementId="org.fipro.efxclipse.expressions.example.app.menu.save" visible="false" label="Save">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_tPQDxbs8EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directmenuitem.save" label="Save" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_TgFdMLwIEeSmd98FzMsfGw" elementId="org.fipro.efxclipse.expressions.example.app.menu.debug" label="Debug">
+        <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_VZq1ALwIEeSmd98FzMsfGw" coreExpressionId="debugenabled"/>
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_tPQDxrs8EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directmenuitem.debug" label="Debug" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler">
+          <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_tPQDx7s8EeSrrP9hKx24yQ" coreExpressionId="debugenabled"/>
+        </children>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_GGJE0Ls9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_GGJE0bs9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.toolbar.0">
+        <tags>fillspace</tags>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_GGJE0rs9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.2" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/sample.gif" tooltip="" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.ToggleToolbarItem"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_GGJE07s9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.save" visible="false" label="" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/save_edit.gif" tooltip="Save" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler"/>
+        <children xsi:type="menu:DirectToolItem" xmi:id="_GGJE1Ls9EeSrrP9hKx24yQ" elementId="org.fipro.e4.toolbar.example.directtoolitem.1" iconURI="platform:/plugin/org.fipro.efxclipse.expressions.example.app/icons/ldebug_obj.gif" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.SimpleHandler">
+          <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_GGJE1bs9EeSrrP9hKx24yQ" coreExpressionId="debugenabled"/>
+        </children>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_fvPbYLs8EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.handler.0" contributionURI="bundleclass://org.fipro.efxclipse.expressions.example.app/org.fipro.efxclipse.expressions.example.app.ToggleMenuItem" command="_hVx7YLs8EeSrrP9hKx24yQ"/>
+  <rootContext xmi:id="_JLOb4Ls8EeSrrP9hKx24yQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_JLOb4rs8EeSrrP9hKx24yQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_JLOb47s8EeSrrP9hKx24yQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_hVx7YLs8EeSrrP9hKx24yQ" elementId="org.fipro.efxclipse.expressions.example.app.command.toggleMenuItemCommand" commandName="Toggle Menu Item Command"/>
+  <addons xmi:id="_JLOb5Ls8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_JLOb5bs8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_JLOb5rs8EeSrrP9hKx24yQ" elementId="org.eclipse.fx.ui.keybindings.e4.service" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingServiceAddon"/>
+  <addons xmi:id="_JLOb57s8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_JLOb6Ls8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_JLOb6bs8EeSrrP9hKx24yQ" elementId="org.eclipse.fx.ui.keybindings.e4.model" contributionURI="bundleclass://org.eclipse.fx.ui.keybindings.e4/org.eclipse.fx.ui.keybindings.e4.BindingProcessingAddon"/>
+  <addons xmi:id="_JLOb6rs8EeSrrP9hKx24yQ" elementId="org.eclipse.e4.ui.workbench.addons.HandlerProcessingAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
